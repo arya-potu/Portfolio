@@ -50,7 +50,7 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="section-padding">
+    <section id="experience" className="section-padding pt-24">
       <div className="container-width">
         <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-16">My Experience</h2>
         

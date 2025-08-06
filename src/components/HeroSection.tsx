@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center section-padding">
+    <section id="home" className="min-h-screen flex items-center section-padding pt-24">
       <div className="container-width w-full">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Hero Text */}
@@ -19,16 +19,16 @@ const HeroSection = () => {
               
               <Button 
                 className="bg-hero-green hover:bg-hero-green/90 text-darker-surface font-semibold px-8 py-3 h-auto"
-                onClick={() => window.open('https://www.linkedin.com/in/aryavardhan-potu-b2695b326/', '_blank')}
+                onClick={() => window.open('/resume.pdf', '_blank')}
               >
-                Hire Me
+                Download Resume
               </Button>
             </div>
 
             {/* Stats */}
             <div className="flex flex-wrap gap-8 pt-8">
               <div>
-                <div className="text-2xl lg:text-3xl font-bold text-foreground">3rd</div>
+                <div className="text-2xl lg:text-3xl font-bold text-foreground">Final</div>
                 <div className="text-sm text-text-gray">Year BTech Student</div>
               </div>
               <div>

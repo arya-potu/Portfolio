@@ -22,11 +22,11 @@ const ProjectsSection = () => {
     },
     {
       id: "03",
-      title: "Virtual Drawing Board",
-      description: "Developed a Virtual Drawing Board enabling contactless interaction using real-time hand gesture recognition and voice commands for intuitive digital sketching. Enhanced accessibility through Computer Vision and Speech Processing integration.",
-      technologies: ["Python", "OpenCV", "MediaPipe", "SpeechRecognition", "Flask"],
-      githubUrl: "https://github.com/arya-potu/Virtual-Drawing-Board-using-Hand-Gestures-with-Voice-Commands",
-      image: "🎨"
+      title: "AdMyBrand -AI",
+      description: "An AI-powered brand advertising platform that leverages machine learning to create personalized marketing campaigns and optimize brand visibility across digital channels.",
+      technologies: ["React", "Node.js", "Python", "TensorFlow", "MongoDB"],
+      githubUrl: "https://github.com/arya-potu/admybrand-ai-leap",
+      image: "🤖"
     },
     {
       id: "04",
@@ -55,7 +55,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="section-padding bg-dark-surface/30">
+    <section id="projects" className="section-padding bg-dark-surface/30 pt-24">
       <div className="container-width">
         <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-16">MY PROJECTS</h2>
         

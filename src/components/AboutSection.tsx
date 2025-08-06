@@ -27,7 +27,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" className="section-padding bg-dark-surface/30">
+    <section id="about" className="section-padding bg-dark-surface/30 pt-24">
       <div className="container-width">
         {/* Quote */}
         <div className="text-center mb-16">
@@ -46,7 +46,7 @@ const AboutSection = () => {
             
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm a 3rd-year BTech Computer Science student at GRIET, passionate about building scalable web applications and solving complex problems. I specialize in full-stack MERN development with strong foundations in Data Structures and Algorithms.
+                I'm a final-year BTech Computer Science student at GRIET, passionate about building scalable web applications and solving complex problems. I specialize in full-stack MERN development with strong foundations in Data Structures and Algorithms.
               </p>
               
               <p>
