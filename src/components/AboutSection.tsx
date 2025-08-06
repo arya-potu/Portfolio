@@ -12,8 +12,7 @@ const AboutSection = () => {
     backend: [
       { name: "Node.js", icon: "🟢" },
       { name: "Express.js", icon: "🚀" },
-      { name: "Java", icon: "☕" },
-      { name: "Python", icon: "🐍" }
+      { name: "Java", icon: "☕" }
     ],
     database: [
       { name: "MySQL", icon: "🐬" },

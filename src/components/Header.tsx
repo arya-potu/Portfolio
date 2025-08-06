@@ -33,11 +33,11 @@ const Header = () => {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'glass-effect' : ''
       }`}>
-        <div className="container-width flex items-center justify-between py-4 px-container">
+        <div className="container-width flex items-start justify-between py-6 px-container">
           {/* Social Links */}
-          <div className="hidden lg:flex flex-col gap-2">
+          <div className="hidden lg:flex flex-col gap-3 min-w-[140px]">
             <span className="text-xs font-mono text-text-gray uppercase tracking-wider">SOCIAL</span>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               {socialLinks.map((link) => (
                 <a 
                   key={link.name}
@@ -53,9 +53,9 @@ const Header = () => {
           </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden lg:flex flex-col gap-2">
+          <nav className="hidden lg:flex flex-col gap-3 min-w-[140px]">
             <span className="text-xs font-mono text-text-gray uppercase tracking-wider">MENU</span>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               {menuItems.map((item) => (
                 <a 
                   key={item.name}
@@ -68,15 +68,24 @@ const Header = () => {
             </div>
           </nav>
 
-          {/* Contact */}
-          <div className="hidden lg:flex flex-col gap-2">
+          {/* Contact & Resume */}
+          <div className="hidden lg:flex flex-col gap-3 min-w-[200px] text-right">
             <span className="text-xs font-mono text-text-gray uppercase tracking-wider">GET IN TOUCH</span>
-            <a 
-              href="mailto:aryavardhan.potu@gmail.com"
-              className="text-sm text-muted-foreground hover:text-hero-green transition-colors"
-            >
-              aryavardhan.potu@gmail.com
-            </a>
+            <div className="flex flex-col gap-2">
+              <a 
+                href="mailto:aryavardhan.potu@gmail.com"
+                className="text-sm text-muted-foreground hover:text-hero-green transition-colors"
+              >
+                aryavardhan.potu@gmail.com
+              </a>
+              <a 
+                href="/resume.pdf"
+                download="Aryavardhan_Potu_Resume.pdf"
+                className="text-sm text-hero-green hover:text-hero-green/80 transition-colors font-medium"
+              >
+                Download Resume
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -133,16 +142,26 @@ const Header = () => {
                   </div>
                 </div>
 
-                {/* Mobile Contact */}
+                {/* Mobile Contact & Resume */}
                 <div>
                   <span className="text-xs font-mono text-text-gray uppercase tracking-wider">GET IN TOUCH</span>
-                  <a 
-                    href="mailto:aryavardhan.potu@gmail.com"
-                    className="mt-2 block text-muted-foreground hover:text-hero-green transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    aryavardhan.potu@gmail.com
-                  </a>
+                  <div className="mt-2 space-y-2">
+                    <a 
+                      href="mailto:aryavardhan.potu@gmail.com"
+                      className="block text-muted-foreground hover:text-hero-green transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      aryavardhan.potu@gmail.com
+                    </a>
+                    <a 
+                      href="/resume.pdf"
+                      download="Aryavardhan_Potu_Resume.pdf"
+                      className="block text-hero-green hover:text-hero-green/80 transition-colors font-medium"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Download Resume
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

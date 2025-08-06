@@ -57,7 +57,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="section-padding bg-dark-surface/30">
       <div className="container-width">
-        <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-16">SELECTED PROJECTS</h2>
+        <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-16">MY PROJECTS</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (

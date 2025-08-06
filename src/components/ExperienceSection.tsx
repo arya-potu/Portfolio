@@ -26,17 +26,26 @@ const ExperienceSection = () => {
     {
       title: "Meta Front-End Developer Specialization",
       issuer: "Meta",
-      description: "HTML/CSS, JavaScript, Front-End Development"
+      description: "HTML/CSS, JavaScript, Front-End Development",
+      link: null
     },
     {
-      title: "Data Structures and Algorithms",
-      issuer: "Various Platforms",
-      description: "Advanced coursework in data analysis and problem solving"
+      title: "Data Science for Engineers",
+      issuer: "NPTEL",
+      description: "Comprehensive data science and analytics course",
+      link: "https://drive.google.com/file/d/1No5VyepmAWrt861xEW6-gDaaJxXT0cRu/view"
+    },
+    {
+      title: "Data Analytics with Python",
+      issuer: "Coursera",
+      description: "Python programming for data analysis and visualization",
+      link: "https://drive.google.com/file/d/1mn0D1HdRbKR_12AFMArpPN7Tx3Lv1HRu/view"
     },
     {
       title: "Smart Coder Certification",
       issuer: "Smart Interviews",
-      description: "Excellence in Data Structures"
+      description: "Excellence in Data Structures and Algorithms",
+      link: "https://smartinterviews.in/certificate/b8027bda"
     }
   ];
 
@@ -72,7 +81,19 @@ const ExperienceSection = () => {
               {certifications.map((cert, index) => (
                 <Card key={index} className="p-6 bg-card/50 hover:bg-card/70 transition-colors">
                   <div className="space-y-3">
-                    <h4 className="font-semibold text-foreground">{cert.title}</h4>
+                    <div className="flex items-start justify-between gap-4">
+                      <h4 className="font-semibold text-foreground">{cert.title}</h4>
+                      {cert.link && (
+                        <a 
+                          href={cert.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-hero-green hover:text-hero-green/80 text-sm font-medium transition-colors"
+                        >
+                          View Certificate
+                        </a>
+                      )}
+                    </div>
                     <p className="text-hero-green font-medium text-sm">{cert.issuer}</p>
                     <p className="text-muted-foreground text-sm">{cert.description}</p>
                   </div>
