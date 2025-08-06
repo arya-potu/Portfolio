@@ -52,16 +52,25 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				'hero-green': 'hsl(var(--hero-green))',
+				'text-gray': 'hsl(var(--text-gray))',
+				'dark-surface': 'hsl(var(--dark-surface))',
+				'darker-surface': 'hsl(var(--darker-surface))'
+			},
+			fontFamily: {
+				'display': ['var(--font-display)'],
+				'mono': ['var(--font-mono)']
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-dark': 'var(--gradient-dark)'
+			},
+			spacing: {
+				'section': 'var(--section-padding)',
+				'container': 'var(--container-padding)'
+			},
+			transitionTimingFunction: {
+				'spring': 'cubic-bezier(0.175, 0.885, 0.32, 1.275)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
