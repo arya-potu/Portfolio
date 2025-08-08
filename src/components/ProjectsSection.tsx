@@ -30,11 +30,11 @@ const ProjectsSection = () => {
     },
     {
       id: "04",
-      title: "Weather Forecast",
-      description: "A responsive weather app that shows real-time weather data using location input. Developed a minimalist and responsive design that displays temperature, city name, date, time, and weather conditions.",
-      technologies: ["HTML5", "CSS3", "JavaScript", "OpenWeatherMap API"],
-      githubUrl: "https://github.com/arya-potu/WeatherForecast",
-      image: "🌦️"
+      title: "Virtual Drawing Board",
+      description: "A browser-based canvas app to draw, erase, change colors/sizes, and download your artwork. Built with performant rendering and mobile-friendly gestures.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Canvas API"],
+      githubUrl: "https://github.com/arya-potu",
+      image: "🎨"
     },
     {
       id: "05",
@@ -55,13 +55,13 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="section-padding bg-dark-surface/30 pt-24">
+    <section id="projects" className="section-padding bg-dark-surface/30 pt-24 animate-fade-in">
       <div className="container-width">
         <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-16">MY PROJECTS</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <Card key={project.id} className="group overflow-hidden border-border/50 bg-card/50 hover:bg-card/70 transition-all duration-300 hover:scale-[1.02]">
+            <Card key={project.id} className="group overflow-hidden border-border/50 bg-card/50 hover:bg-card/70 transition-all duration-300 hover:scale-[1.02] animate-enter">
               {/* Project Image/Icon */}
               <div className="aspect-video bg-gradient-dark flex items-center justify-center text-6xl">
                 {project.image}
