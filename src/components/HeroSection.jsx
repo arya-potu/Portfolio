@@ -14,7 +14,7 @@ const HeroSection = () => {
             
             <div className="max-w-2xl space-y-4">
               <p className="text-lg text-muted-foreground">
-                Hi! I'm <span className="text-foreground font-semibold">Aryavardhan</span>. A motivated Computer Science student with hands-on full-stack MERN development experience and strong Java, DSA, and problem-solving skills.
+                Hi! I'm <span className="text-foreground font-semibold">Aryavardhan Potu</span>. A motivated Computer Science student with hands-on full-stack MERN development experience and strong Java, DSA, and problem-solving skills.
               </p>
               
               <Button 
@@ -45,7 +45,7 @@ const HeroSection = () => {
           {/* Large Name Display */}
           <div className="flex-1 lg:flex hidden items-center justify-end">
             <div className="text-[clamp(4rem,12vw,16rem)] font-black text-foreground/10 select-none">
-              ARYAVARDHAN
+              ARYAVARDHAN POTU
             </div>
           </div>
         </div>
