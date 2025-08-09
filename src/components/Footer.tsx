@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container-width">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold text-foreground mb-2">ARYAVARDHAN POTU</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-2">ARYAVARDHAN</h3>
             <a 
               href="mailto:aryavardhan.potu@gmail.com"
               className="text-muted-foreground hover:text-hero-green transition-colors"

@@ -50,14 +50,14 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="section-padding pt-24 animate-fade-in">
+    <section id="experience" className="section-padding pt-24">
       <div className="container-width">
-        <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-16">Journey & Achievements</h2>
+        <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-16">My Experience</h2>
         
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Experience Timeline */}
           <div className="space-y-8">
-            <h3 className="text-xl font-semibold text-text-gray">Learning Journey</h3>
+            <h3 className="text-xl font-semibold text-text-gray">Professional Journey</h3>
             <div className="space-y-6">
               {experiences.map((exp, index) => (
                 <Card key={index} className="p-6 border-l-4 border-l-hero-green bg-card/50">
