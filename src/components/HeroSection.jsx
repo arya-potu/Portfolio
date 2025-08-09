@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center section-padding pt-24">
+    <section id="home" className="min-h-screen flex items-center section-padding pt-24 animate-fade-in">
       <div className="container-width w-full">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Hero Text */}
