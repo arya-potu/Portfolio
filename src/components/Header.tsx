@@ -39,7 +39,7 @@ const Header = () => {
         <div className="container-width flex items-center justify-between py-3 px-container">
           {/* Brand */}
           <a href="#home" className="font-mono text-xs text-text-gray tracking-widest hover:text-hero-green transition-colors">
-            ARYAVARDHAN
+            ARYAVARDHAN POTU
           </a>
 
           {/* Desktop Navigation */}
@@ -54,10 +54,10 @@ const Header = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-sm">About</NavigationMenuTrigger>
-                  <NavigationMenuContent className="z-[60] bg-card border border-border rounded-md shadow-xl">
+                  <NavigationMenuContent className="z-[60] bg-card border border-border rounded-md shadow-xl animate-fade-in">
                     <div className="grid grid-cols-1 gap-2 p-4 min-w-[220px]">
                       <a href="#about" className="text-sm text-muted-foreground hover:text-hero-green">About Me</a>
-                      <a href="#experience" className="text-sm text-muted-foreground hover:text-hero-green">Experience</a>
+                      <a href="#experience" className="text-sm text-muted-foreground hover:text-hero-green">Journey & Achievements</a>
                       <a href="#projects" className="text-sm text-muted-foreground hover:text-hero-green">Projects</a>
                     </div>
                   </NavigationMenuContent>
@@ -65,7 +65,7 @@ const Header = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-sm">Projects</NavigationMenuTrigger>
-                  <NavigationMenuContent className="z-[60] bg-card border border-border rounded-md shadow-xl">
+                  <NavigationMenuContent className="z-[60] bg-card border border-border rounded-md shadow-xl animate-fade-in">
                     <div className="grid sm:grid-cols-2 gap-4 p-4 min-w-[420px]">
                       <a href="https://github.com/arya-potu/Urban-ecommerce" target="_blank" rel="noreferrer" className="block p-3 rounded bg-dark-surface hover:bg-muted transition-colors">
                         <div className="text-sm font-medium">Urban‑Ecommerce</div>
@@ -85,11 +85,22 @@ const Header = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-sm">Certifications</NavigationMenuTrigger>
-                  <NavigationMenuContent className="z-[60] bg-card border border-border rounded-md shadow-xl">
+                  <NavigationMenuContent className="z-[60] bg-card border border-border rounded-md shadow-xl animate-fade-in">
                     <div className="grid grid-cols-1 gap-2 p-4 min-w-[260px]">
                       <a href="https://drive.google.com/file/d/1No5VyepmAWrt861xEW6-gDaaJxXT0cRu/view" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-hero-green">Data Science for Engineers</a>
                       <a href="https://drive.google.com/file/d/1mn0D1HdRbKR_12AFMArpPN7Tx3Lv1HRu/view" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-hero-green">Data Analytics with Python</a>
                       <a href="https://smartinterviews.in/certificate/b8027bda" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-hero-green">Smart Coder</a>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm">Profiles</NavigationMenuTrigger>
+                  <NavigationMenuContent className="z-[60] bg-card border border-border rounded-md shadow-xl animate-fade-in">
+                    <div className="grid grid-cols-1 gap-2 p-4 min-w-[260px]">
+                      <a href="https://github.com/arya-potu" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-hero-green">GitHub</a>
+                      <a href="https://www.linkedin.com/in/aryavardhan-potu-b2695b326/" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-hero-green">LinkedIn</a>
+                      <a href="https://leetcode.com/u/arya_reddy04/" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-hero-green">LeetCode</a>
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -127,7 +138,7 @@ const Header = () => {
                   <div className="space-y-2">
                     <a href="#home" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>Home</a>
                     <a href="#about" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>About</a>
-                    <a href="#experience" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>Experience</a>
+                    <a href="#experience" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>Journey & Achievements</a>
                     <a href="#projects" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>Projects</a>
                   </div>
                 </div>
@@ -138,6 +149,15 @@ const Header = () => {
                     <a href="https://drive.google.com/file/d/1No5VyepmAWrt861xEW6-gDaaJxXT0cRu/view" target="_blank" rel="noreferrer" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>Data Science for Engineers</a>
                     <a href="https://drive.google.com/file/d/1mn0D1HdRbKR_12AFMArpPN7Tx3Lv1HRu/view" target="_blank" rel="noreferrer" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>Data Analytics with Python</a>
                     <a href="https://smartinterviews.in/certificate/b8027bda" target="_blank" rel="noreferrer" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>Smart Coder</a>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="text-xs font-mono text-text-gray uppercase tracking-wider mb-2">Profiles</div>
+                  <div className="space-y-2">
+                    <a href="https://github.com/arya-potu" target="_blank" rel="noreferrer" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>GitHub</a>
+                    <a href="https://www.linkedin.com/in/aryavardhan-potu-b2695b326/" target="_blank" rel="noreferrer" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>LinkedIn</a>
+                    <a href="https://leetcode.com/u/arya_reddy04/" target="_blank" rel="noreferrer" className="block text-muted-foreground hover:text-hero-green" onClick={() => setIsMenuOpen(false)}>LeetCode</a>
                   </div>
                 </div>
 
