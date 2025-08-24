@@ -10,23 +10,26 @@ const ProjectsSection = () => {
       description: "A full-stack e-commerce platform featuring JWT authentication, secure password hashing with bcrypt, and protected user sessions. Designed and implemented RESTful APIs with advanced product search, dynamic filtering, and seamless cart migration.",
       technologies: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS", "JWT", "PayPal API"],
       githubUrl: "https://github.com/arya-potu/Urban-ecommerce",
+      demoUrl: "https://urban-ecommerce-nw3f.vercel.app",
       image: "🛍️"
     },
     {
-      id: "02", 
-      title: "BingeMovie OTT",
-      description: "A mobile-first OTT platform using HTML5, CSS3, and JavaScript, featuring dynamic UI elements, interactive carousels, and advanced search functionality. Integrated real-time API data fetching and secure authentication.",
-      technologies: ["React", "CSS3", "Firebase", "TMDb API"],
-      githubUrl: "https://github.com/arya-potu/BingeMovie-Ott",
-      image: "🍿"
-    },
-    {
-      id: "03",
+      id: "02",
       title: "AdMyBrand -AI",
       description: "An AI-powered brand advertising platform that leverages machine learning to create personalized marketing campaigns and optimize brand visibility across digital channels.",
       technologies: ["React", "Node.js", "Python", "TensorFlow", "MongoDB"],
       githubUrl: "https://github.com/arya-potu/admybrand-ai-leap",
+      demoUrl: "https://admybrand-ai-leap.vercel.app",
       image: "🤖"
+    },
+    {
+      id: "03", 
+      title: "BingeMovie OTT",
+      description: "A mobile-first OTT platform using HTML5, CSS3, and JavaScript, featuring dynamic UI elements, interactive carousels, and advanced search functionality. Integrated real-time API data fetching and secure authentication.",
+      technologies: ["React", "CSS3", "Firebase", "TMDb API"],
+      githubUrl: "https://github.com/arya-potu/BingeMovie-Ott",
+      demoUrl: "https://binge-movie-ott.vercel.app",
+      image: "🍿"
     },
     {
       id: "04",
@@ -50,6 +53,7 @@ const ProjectsSection = () => {
       description: "A responsive front-end clone of the Netflix homepage built with clean layout and mobile-first design. Features responsive grid layouts and smooth animations.",
       technologies: ["HTML5", "CSS3", "JavaScript"],
       githubUrl: "https://github.com/arya-potu/Netflix-Homepage",
+      demoUrl: "https://netflix-homepage-lams.vercel.app",
       image: "📺"
     }
   ];
@@ -86,13 +90,16 @@ const ProjectsSection = () => {
                     >
                       <Github className="h-4 w-4" />
                     </Button>
-                    <Button
-                      variant="ghost" 
-                      size="icon"
-                      className="h-8 w-8 text-text-gray hover:text-hero-green"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                    </Button>
+                    {project.demoUrl && (
+                      <Button
+                        variant="ghost" 
+                        size="icon"
+                        className="h-8 w-8 text-text-gray hover:text-hero-green"
+                        onClick={() => window.open(project.demoUrl, '_blank')}
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                      </Button>
+                    )}
                   </div>
                 </div>
                 
